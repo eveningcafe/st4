@@ -1,0 +1,23 @@
+start spark
+---------------------
+export SPARK_MASTER_HOST=192.168.56.12
+
+export SPARK_LOCAL_HOST=192.168.56.101
+
+export SPARK_WORKER_WEBUI_PORT="8080"
+
+export SPARK_LOCAL_IP=192.168.56.101
+
+opt/spark/spark-bin/sbin/start-slave.sh spark://192.168.56.12:7077 -m 2000M
+---------------------
+sparkMaster
+-------------------------
+/opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+/home/spark/applications/run-application.sh /home/spark/applications/detection/ddos/spark/detection_ddos.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -nf "192\.168\..+"
+
+/home/spark/applications/run-application.sh /home/spark/applications/statistics/dns_statistics/spark/dns_statistics.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln 192.168.0.0/16
+
+pip install netaddr
+
+./run-application.sh ./statistics/hosts_statistics/spark/host_stats.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln "3.0.0.0/24" -w 10 -m 10
