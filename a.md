@@ -1,4 +1,4 @@
-start spark
+1.start spark
 ---------------------
 export SPARK_MASTER_HOST=192.168.56.12
 
@@ -9,8 +9,8 @@ export SPARK_WORKER_WEBUI_PORT="8080"
 export SPARK_LOCAL_IP=192.168.56.101
 
 opt/spark/spark-bin/sbin/start-slave.sh spark://192.168.56.12:7077 -m 2000M
----------------------
-sparkMaster
+
+2.sparkMaster
 -------------------------
 /opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
 
@@ -21,3 +21,4 @@ sparkMaster
 pip install netaddr
 
 ./run-application.sh ./statistics/hosts_statistics/spark/host_stats.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln "3.0.0.0/24" -w 10 -m 10
+---------------------
