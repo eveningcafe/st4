@@ -21,4 +21,16 @@ opt/spark/spark-bin/sbin/start-slave.sh spark://192.168.56.12:7077 -m 2000M
 pip install netaddr
 
 ./run-application.sh ./statistics/hosts_statistics/spark/host_stats.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln "3.0.0.0/24" -w 10 -m 10
+
+3.producer
 ---------------------
+
+/opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+__consumer_offsets
+ipfix.entry
+results.output
+test
+
+/opt/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic ipfix.entry --from-beginning
+
+/opt/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic results.output --from-beginning
