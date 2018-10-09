@@ -24,13 +24,32 @@ pip install netaddr
 
 3.producer
 ---------------------
+ipfixsend -i test-data.ipfix -d 192.168.56.11 -p 4739 -t UDP -n 10
 
 /opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+
 __consumer_offsets
+
 ipfix.entry
+
 results.output
-test
+
 
 /opt/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic ipfix.entry --from-beginning
 
+{"@type": "ipfix.entry", "ipfix.octetDeltaCount": 59, "ipfix.packetDeltaCount": 1, "ipfix.protocolIdentifier": 17, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 8278, "ipfix.sourceIPv4Address": "3.0.0.0", "ipfix.ingressInterface": 0, "ipfix.destinationTransportPort": 53, "ipfix.destinationIPv4Address": "8.8.8.8", "ipfix.egressInterface": 0, "ipfix.samplingInterval": 0, "ipfix.samplingAlgorithm": 0, "ipfix.ipVersion": 4, "ipfix.flowStartMilliseconds": 1489141087955, "ipfix.flowEndMilliseconds": 1489141087955}
+
+
 /opt/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic results.output --from-beginning
+
+{"src_ip":"3.0.0.0","stats":{"total":{"packets":40,"bytes":5600,"flow":40},"avg_flow_duration":0.0,"dport_count":2,"peer_number":2},"@type":"host_stats"}
+
+{"@type": "protocols_statistics", "protocol": "udp", "flows": 1, "packets": 2, "bytes": 248}
+
+{"@type": "protocols_statistics", "protocol": "other", "flows": 20, "packets": 20, "bytes": 1680}
+
+{"@type": "protocols_statistics", "protocol": "tcp", "flows": 60, "packets": 60, "bytes": 360480}
+
+
+
+
