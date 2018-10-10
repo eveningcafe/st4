@@ -1,3 +1,6 @@
+tcpreplay tcprewrite
+https://serverfault.com/questions/744142/how-to-send-captured-packets-to-a-different-destination
+
 1.start spark
 ---------------------
 export SPARK_MASTER_HOST=192.168.56.12
