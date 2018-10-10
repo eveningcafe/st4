@@ -2,6 +2,8 @@ tcpreplay tcprewrite
 https://serverfault.com/questions/744142/how-to-send-captured-packets-to-a-different-destination
 https://nemea.liberouter.org/
 
+https://www.google.com/search?client=ubuntu&channel=fs&q=tcprewrite%2Btcpreplay&ie=utf-8&oe=utf-8
+
 1.start spark
 ---------------------
 export SPARK_MASTER_HOST=192.168.56.12
