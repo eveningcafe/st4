@@ -1,3 +1,5 @@
+
+
 tcpreplay tcprewrite
 https://jaceklaskowski.gitbooks.io/apache-kafka/kafka-properties-bootstrap-servers.html
 
@@ -6,6 +8,10 @@ https://nemea.liberouter.org/
 
 https://www.google.com/search?client=ubuntu&channel=fs&q=tcprewrite%2Btcpreplay&ie=utf-8&oe=utf-8
 http://staff.cesnet.cz/~krejci/ipfixcol/doc/files.html
+
+
+ipfix format:
+https://www.iana.org/assignments/ipfix/ipfix.xhtml
 
 1.start spark
 ---------------------
@@ -22,10 +28,23 @@ opt/spark/spark-bin/sbin/start-slave.sh spark://192.168.56.12:7077 -m 2000M
 2.sparkMaster
 -------------------------
 /opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+-----------host----------------
+./run-application.sh statistics/hosts_statistics/spark/application_template.py -iz producer:2181 -it ipfix.entry -oz producer:9092
+ -ot results.output -n 0.10.0.0/0 -wd 10 -ws 10 -c 10
 
+./run-application.sh ./statistics/hosts_statistics/spark/host_stats.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln "0.0.0.0/0" -w 10 -m 10
+
+--------------------------dns_statistic---------------------
+/home/spark/applications/run-application.sh /home/spark/applications/statistics/dns_statistics/spark/dns_statistics.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln 0.0.0.0/0
+--------------------------detect-ddos--------
 /home/spark/applications/run-application.sh /home/spark/applications/detection/ddos/spark/detection_ddos.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -nf "192\.168\..+"
 
-/home/spark/applications/run-application.sh /home/spark/applications/statistics/dns_statistics/spark/dns_statistics.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln 192.168.0.0/16
+--------------------------extenal dns
+/home/spark/applications/run-application.sh /home/spark/applications/detection/dns_external_resolvers/spark/dns_external_resolvers.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln 0.0.0.0/0
+--------------------------detect ssh-auth
+/home/ubuntu/applications/run-application.sh /home/ubuntu/applications/detection/ssh_auth_simple/spark/ssh_auth_simple.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output
+--------------------------parten filter
+
 
 pip install netaddr
 
