@@ -32,6 +32,8 @@ pip install netaddr
 
 3.producer
 ---------------------
+nano /opt/kafka/config/server.properties
+listeners=PLAINTEXT://producer:9092
 ipfixsend -i test-data.ipfix -d 192.168.56.11 -p 4739 -t UDP -n 10
 
 /opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
