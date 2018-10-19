@@ -39,6 +39,9 @@ opt/spark/spark-bin/sbin/start-slave.sh spark://192.168.56.12:7077 -m 2000M
 --------------------------detect-ddos--------
 /home/spark/applications/run-application.sh /home/spark/applications/detection/ddos/spark/detection_ddos.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -nf "192\.168\..+"
 
+192\.168\.2\.\d+
+
+\d+
 --------------------------extenal dns
 /home/spark/applications/run-application.sh /home/spark/applications/detection/dns_external_resolvers/spark/dns_external_resolvers.py -iz producer:2181 -it ipfix.entry -oz producer:9092 -ot results.output -ln 0.0.0.0/0
 --------------------------detect ssh-auth
