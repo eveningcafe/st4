@@ -1,3 +1,13 @@
+netflowipfix
+
+https://www.iana.org/assignments/enterprise-numbers/enterprise-numbers
+
+https://www.plixer.com/blog/netflow/ipfix-information-elements-vs-netflow-elements/
+
+https://www.plixer.com/blog/cisco-netflow/exporting-netflow-or-ipfix/
+
+import https://www.juniper.net/documentation/en_US/junos/topics/concept/services-exporting-ipfix-flow-data-collector.html
+
 pattern findter
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&ved=2ahUKEwiU4J7p15veAhWYc3AKHUoFCDoQFjAHegQIARAC&url=https%3A%2F%2Fis.muni.cz%2Fth%2Fp7gwp%2Ftext_prace.pdf&usg=AOvVaw30ISRVAWA5urhXH9-LpONm
 
