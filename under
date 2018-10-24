@@ -1,0 +1,187 @@
+-------------------------------------------
+Time: 2018-10-24 18:58:16
+-------------------------------------------
+{"src_ip":"240.0.1.4","closest_patterns":["hydra","ncrack-1","ncrack-2"],"data_array":[{"distribution":[21,0,0,0,0,0],"name":"hydra"},{"distribution":[21,0,0,0,0,0],"name":"ncrack-1"},{"distribution":[21,0,0,0,0,0],"name":"ncrack-2"},{"distribution":[0,14,0,0,0,0],"name":"medusa"}],"dst_ip":"240.125.0.2","configuration":"SSH Brute-force Attack Detection","@type":"pattern_finder"}
+
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599472969, "ipfix.flowEndMilliseconds": 1537599483842, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34296, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599472969, "ipfix.flowEndMilliseconds": 1537599483842, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34296, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3171, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599473052, "ipfix.flowEndMilliseconds": 1537599483857, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34304, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599473052, "ipfix.flowEndMilliseconds": 1537599483857, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34304, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3163, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599472993, "ipfix.flowEndMilliseconds": 1537599483995, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34298, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599472993, "ipfix.flowEndMilliseconds": 1537599483995, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34298, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3171, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599473012, "ipfix.flowEndMilliseconds": 1537599484008, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34300, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599473012, "ipfix.flowEndMilliseconds": 1537599484008, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34300, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3171, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599473031, "ipfix.flowEndMilliseconds": 1537599484028, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34302, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599473031, "ipfix.flowEndMilliseconds": 1537599484028, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34302, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3171, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599474880, "ipfix.flowEndMilliseconds": 1537599485694, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34306, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599474880, "ipfix.flowEndMilliseconds": 1537599485694, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34306, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3171, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599477798, "ipfix.flowEndMilliseconds": 1537599489091, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 34308, "ipfix.destinationTransportPort": 22, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.0.1.4", "ipfix.destinationIPv4Address": "240.125.0.2", "ipfix.packetDeltaCount": 16, "ipfix.octetDeltaCount": 1973, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+{"@type": "ipfix.entry", "ipfix.flowStartMilliseconds": 1537599477798, "ipfix.flowEndMilliseconds": 1537599489091, "ipfix.forwardingStatus": 0, "ipfix.tcpControlBits": 27, "ipfix.protocolIdentifier": 6, "ipfix.ipClassOfService": 0, "ipfix.sourceTransportPort": 22, "ipfix.destinationTransportPort": 34308, "ipfix.icmpTypeCodeIPv4": 0, "ipfix.sourceIPv4Address": "240.125.0.2", "ipfix.destinationIPv4Address": "240.0.1.4", "ipfix.packetDeltaCount": 25, "ipfix.octetDeltaCount": 3171, "ipfix.ingressInterface": 0, "ipfix.egressInterface": 0, "ipfix.bgpSourceAsNumber": 0, "ipfix.bgpDestinationAsNumber": 0}
+
+
+loops:
+key:  hydra
+actual:  [3, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [3, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [3, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 2, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+    
+loops:
+key:  hydra
+actual:  [6, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [6, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [6, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 4, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+    
+loops:
+key:  hydra
+actual:  [9, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [9, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [9, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 6, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+    
+loops:
+key:  hydra
+actual:  [12, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [12, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [12, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 8, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+    
+loops:
+key:  hydra
+actual:  [15, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [15, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [15, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 10, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+    
+loops:
+key:  hydra
+actual:  [18, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [18, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [18, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 12, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+loops:
+    
+key:  hydra
+actual:  [3, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [3, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [3, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 2, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+loops:
+    
+key:  hydra
+actual:  [6, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [6, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [6, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 4, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+loops:
+    
+key:  hydra
+actual:  [9, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [9, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [9, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 6, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+loops:
+    
+key:  hydra
+actual:  [12, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [12, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [12, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 8, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+    
+loops:
+key:  hydra
+actual:  [15, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [15, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [15, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 10, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
+loops:
+key:  hydra
+actual:  [18, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-1
+actual:  [18, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  ncrack-2
+actual:  [18, 0, 0, 0, 0, 0]
+update:  [3, 0, 0, 0, 0, 0]
+key:  medusa
+actual:  [0, 12, 0, 0, 0, 0]
+update:  [0, 2, 0, 0, 0, 0]
